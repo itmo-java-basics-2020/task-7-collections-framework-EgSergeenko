@@ -1,6 +1,11 @@
 package ru.ifmo.collections;
 
-import java.util.*;
+
+import java.util.AbstractSet;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.TreeMap;
+import java.util.Comparator;
 
 /**
  * Represents sorted set of unique values.
@@ -28,7 +33,7 @@ public class SortedSet<T> extends AbstractSet<T> {
     }
 
     private SortedSet(Comparator<T> comparator) {
-        contents = new TreeMap<>(comparator);
+        contents = new TreeMap<T, Object>(comparator);
     }
 
 

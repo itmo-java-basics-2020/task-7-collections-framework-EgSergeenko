@@ -9,8 +9,8 @@ import java.util.LinkedHashSet;
  */
 public class FirstUnique {
 
-    private HashSet<Integer> elements = new HashSet<>();
-    private LinkedHashSet<Integer> uniqueElements = new LinkedHashSet<>();
+    private HashSet<Integer> elements = new HashSet<Integer>();
+    private LinkedHashSet<Integer> uniqueElements = new LinkedHashSet<Integer>();
 
     public FirstUnique(int[] numbers) {
         for (int value : numbers) {
